@@ -1,0 +1,50 @@
+<view class="container">
+	<!-- 搜索 -->
+	<view class="search_box">
+		<icon type="search" color="#ea3840" role="img"></icon>
+		<input class="input" placeholder="输入想要查询的垃圾名称" type="text" confirm-type="search" bindinput="seach" value='{{search}}'></input>
+		<icon type="cancel" color="#ea3840" role="img" bindtap='clear'></icon>
+	</view>
+	<!-- 分类 -->
+	<view class="collectionView" wx:if="{{shouldkey.length == 0}}">
+		<view wx:for="{{collections}}" wx:key="{{item.name}}" class='cell' bindtap='bindViewTap' data-index="{{index}}">
+			<view class="head">
+				<image class='icon' src="{{item.icon}}"></image>
+				<!-- <Text class="count">{{item.wasts.length}}</Text> -->
+			</view>
+			<text class="typeName">{{item.name}}</text>
+		</view>
+	</view>
+	<!-- 输入内容后 -->
+	<view class='searchList' wx:else>
+		<block wx:for="{{shouldkey}}" wx:key="*this">
+			<view class="searchCell" bindtap='searchSort' data-shouldkey='{{item}}'>{{item}}</view>
+			<view class='line'></view>
+		</block>
+	</view>
+	<!-- 点击搜索词后 -->
+	<view class='resultback' wx:if="{{selectedSort != null}}" bindtap='dismiss'>
+		<view class='resultView'>
+			<view class='resultHead'>
+				{{selectedSort.name}}
+			</view>
+			<view class='desView'>
+				<image class='bigIcon' src='{{selectedSort.icon}}' style="background-color:{{selectedSort.color}}"></image>
+				{{selectedSort.des}}
+			</view>
+			<view class='title'>
+				{{selectedSort.name}}主要包括
+			</view>
+			<view class='des'>
+				{{selectedSort.inc}}
+			</view>
+			<view class='title'>
+				{{selectedSort.name}}投放要求
+			</view>
+			<view class='des'>
+				{{selectedSort.req}}
+			</view>
+		</view>
+	</view>
+	<view class="sign" wx:if="{{shouldkey.length == 0}}">垃圾分类举手之劳,循环利用变废为宝。</view>
+</view>

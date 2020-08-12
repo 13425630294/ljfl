@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/text/text"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+   
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "查询",
+      "iconPath": "images/chaxun.png",
+      "selectedIconPath": "images/chaxun_.png"
+    },
+   {
+      "pagePath": "pages/text/text",
+      "text": "小测试",
+      "iconPath": "images/text.png",
+      "selectedIconPath": "images/text_.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,186 @@
+.container {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.search_box {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 18px;
+  width: 75vw;
+  margin-top: 70px;
+  /* border: 1px solid #ea3840; */
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.photo_box {
+  background-color: #00cc77;
+  margin-top: 50px;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo_img {
+  height: 50px;
+  width: 50px;
+
+}
+
+.photo_text {
+  margin-top: 10px;
+  color: #00cc77;
+}
+
+.poster {
+  height: 160px;
+  margin-top: 60px;
+}
+
+.sign {
+  margin-top: 20px;
+  color: #201f1f;
+}
+
+.collectionView {
+  margin-top: 100rpx;
+  /* padding-right: 40rpx; */
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.cell {
+  width: 100px;
+}
+
+.icon {
+  width: 180rpx;
+  height: 360rpx;
+
+}
+
+.count {
+  font-size: 80rpx;
+  font-weight: bold;
+}
+
+.typeName {
+  font-size: 30rpx;
+  color: #3b3b3b;
+}
+
+.searchList {
+  padding-top: 12rpx;
+  width: 90vw;
+}
+
+.searchCell {
+  margin: 10rpx;
+  text-align: left;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 20;
+}
+
+.line {
+  height: 2rpx;
+  background-color: rgb(221, 221, 221);
+}
+
+.resultback {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  background-color: rgba(75, 75, 75, 0.384);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultView {
+  width: 80%;
+  background-color: white;
+  border-radius: 30rpx;
+  color: rgb(41, 41, 41);
+}
+
+.resultHead {
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200rpx;
+  border-radius: 30rpx 30rpx 0 0;
+  font-size: 60rpx;
+  font-weight: bold;
+  color: rgb(39, 39, 39);
+}
+
+.desView {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  word-break: break-all;
+  font-size: 30rpx;
+}
+
+.bigIcon {
+  width: 100rpx;
+  height: 200rpx;
+  padding: 25rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+
+.title {
+  background-color: rgb(233, 233, 233);
+  line-height: 80rpx;
+  height: 80rpx;
+  padding-left: 30rpx;
+  font-size: 34rpx;
+}
+
+.des {
+  margin: 30rpx;
+  font-size: 30rpx;
+}
+
+.sign{
+  font-size: medium;
+  margin-top: 100px;
+}
+
+/* .cai{
+  margin: 50rpx auto 0;
+  text-align: center;
+  border-radius: 30rpx;
+  background-color: #F4D03F;
+background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+
+  padding: 30rpx 60rpx;
+  color: #fff;
+} */
